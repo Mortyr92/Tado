@@ -1,0 +1,13 @@
+{
+  "domain": "tadolocal",
+  "name": "TadoLocal",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/ampscm/TadoLocal",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/ampscm/TadoLocal/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

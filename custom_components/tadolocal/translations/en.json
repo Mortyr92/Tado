@@ -1,0 +1,96 @@
+{
+    "config":  {
+                   "step":  {
+                                "user":  {
+                                             "title":  "Connect to TadoLocal",
+                                             "description":  "Enter the address of your TadoLocal bridge (the REST API, default port 4407). The API key is only needed if TADO_API_KEYS is configured on the bridge.",
+                                             "data":  {
+                                                          "host":  "Host",
+                                                          "port":  "Port",
+                                                          "api_key":  "API key (optional)",
+                                                          "scan_interval":  "Polling interval (seconds)"
+                                                      }
+                                         },
+                                "reauth_confirm":  {
+                                                       "title":  "Re-authenticate with TadoLocal",
+                                                       "description":  "The TadoLocal bridge rejected the API key. Enter a valid key.",
+                                                       "data":  {
+                                                                    "api_key":  "API key"
+                                                                }
+                                                   }
+                            },
+                   "error":  {
+                                 "cannot_connect":  "Failed to connect to the TadoLocal bridge",
+                                 "invalid_auth":  "Invalid API key",
+                                 "unknown":  "Unexpected error"
+                             },
+                   "abort":  {
+                                 "already_configured":  "This TadoLocal bridge is already configured",
+                                 "reauth_successful":  "Re-authentication was successful"
+                             }
+               },
+    "options":  {
+                    "step":  {
+                                 "init":  {
+                                              "title":  "TadoLocal options",
+                                              "data":  {
+                                                           "scan_interval":  "Polling interval (seconds)"
+                                                       }
+                                          }
+                             }
+                },
+    "entity":  {
+                   "sensor":  {
+                                  "temperature":  {
+                                                      "name":  "Temperature"
+                                                  },
+                                  "humidity":  {
+                                                   "name":  "Humidity"
+                                               },
+                                  "target_temperature":  {
+                                                             "name":  "Target temperature"
+                                                         },
+                                  "valve_position":  {
+                                                         "name":  "Valve position"
+                                                     },
+                                  "mode":  {
+                                               "name":  "Mode",
+                                               "state":  {
+                                                             "off":  "Off",
+                                                             "heat":  "Heat",
+                                                             "cool":  "Cool",
+                                                             "auto":  "Auto"
+                                                         }
+                                           },
+                                  "tracked_devices":  {
+                                                          "name":  "Tracked devices"
+                                                      },
+                                  "events_received":  {
+                                                          "name":  "Events received"
+                                                      },
+                                  "version":  {
+                                                  "name":  "Version"
+                                              }
+                              },
+                   "binary_sensor":  {
+                                         "heating":  {
+                                                         "name":  "Heating"
+                                                     },
+                                         "window_open":  {
+                                                             "name":  "Window"
+                                                         },
+                                         "battery_low":  {
+                                                             "name":  "Battery"
+                                                         },
+                                         "zone_leader":  {
+                                                             "name":  "Zone leader"
+                                                         },
+                                         "bridge_connected":  {
+                                                                  "name":  "Bridge connected"
+                                                              },
+                                         "cloud_authenticated":  {
+                                                                     "name":  "Cloud authenticated"
+                                                                 }
+                                     }
+               }
+}
