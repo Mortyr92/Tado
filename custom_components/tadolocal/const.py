@@ -19,7 +19,7 @@ MIN_SCAN_INTERVAL = 5
 
 MIN_TEMP = 5.0
 MAX_TEMP = 30.0
-TEMP_STEP = 0.5
+TEMP_STEP = 0.1
 
 # TadoLocal "mode" (TargetHeatingCoolingState)
 MODE_OFF = 0
